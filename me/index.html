@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">WHO</a></li>
+        <li><a href="#">WHAT</a></li>
+        <li><a href="#">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Who Am I?</h3>
+  <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/60295632_521603248374118_2024430275169091584_o.jpg?_nc_cat=109&_nc_sid=e007fa&_nc_ohc=Ynws4aBTdOMAX_Q4Llx&_nc_oc=AQl0t7h-8wWvzgwg_wyTX0c0S-ZKwoXQ0wMkYn5GVvH3yn6Y7U3JszcseCy2kfYYqCKa-vZ-0IbXklNzVGrfJM4d&_nc_ht=scontent-sea1-1.xx&oh=3723ef66543bf5f4d22237c3ed370e9c&oe=5F9F6D77" class="img-responsive img-circle margin" style="display:inline" alt="me" width="350" height="350">
+  <h3>I'm a great cook</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">What Am I?</h3>
+  <p>I am very skilful in cooking African cuisines. I grew up from a family of many mouths to feed. This gave me the desire to develop recipes and eventually felt in love with cooking. </p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">My Cuisines</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>EKWANG” is a dish very common in the South West Region of Cameroon and is said to have originated from this Region. This dish relished by many and contains the basic classes of food, the flavor and taste are heavenly mouth-watering.  It is cheap, fast to prepare and very nutritive. It is usually wrapped in vegetables which are so rich in vitamins.</p>
+      <img src="https://4.bp.blogspot.com/-ziivgOrNNO0/VnLUDntHIVI/AAAAAAAABxI/z5mhRj06HnI/s1600/1.JPG" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>ACHU AND YELLOW SOUP.This is Achu – pounded cocoyams with a traditional yellow soup. Achu is the traditional meal of a number of villages in the North West region of Cameroon. It is the specialty of the Bamenda or “Bamda” people as I like to say. It is also widely eaten by the Bamilekes in the western region of the country.</p>
+      <img src="https://4.bp.blogspot.com/-1lai7ZOvrTw/Vmr5yMaYEfI/AAAAAAAABu8/eNwqfHNM9vM/s1600/ACHU%2BDONE.JPG" style="width:100%" alt="ACHU AND YELLOW SOUP">
+    </div>
+    <div class="col-sm-4"> 
+      <p>KOKI CORN is one of the foods that is popular all over Cameroon. This dish is normally cooked during the raining season because of the abundance of fresh corn, and it is very tasty and delicious.</p>
+      <img src="https://4.bp.blogspot.com/-Fm-k_X6Ki4I/VnLe5ZSW9NI/AAAAAAAAByU/hGHWpDqO_wc/s1600/1.JPG" class="img-responsive margin" style="width:100%" alt="KOKI CORN">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+</footer>
+
+</body>
+</html>

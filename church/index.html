@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme The Band</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/94385117_759612437906530_938839585587200000_n.jpg?_nc_cat=101&_nc_sid=85a577&_nc_ohc=AokWPaSr-yoAX-upRWd&_nc_ht=scontent-sea1-1.xx&oh=aa511205fa4df0d7ebceb82071cfeb67&oe=5F9DAEBC">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <!--<li><a href="#band">BAND</a></li>-->
+        <li><a href="#tour">SERVICES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <!--<li><a href="#"></a></li>-->
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li> 
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/39171408_383552002179244_5130860548476370944_o.jpg?_nc_cat=109&_nc_sid=dd9801&_nc_ohc=3uNm3hctE34AX_0KVQF&_nc_ht=scontent-sea1-1.xx&oh=3edf600e6e1bf4999eb338028c1dc606&oe=5F9E2EDE" alt="New York" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/88055688_723526208181820_578334380246695936_n.jpg?_nc_cat=105&_nc_sid=dd9801&_nc_ohc=ZIpVciz3VIcAX_fg0L0&_nc_ht=scontent-sea1-1.xx&oh=c8f9b26752140945929cb9b4af6d3551&oe=5F9F11C4" alt="Team of 2020" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>   
+      </div>
+    
+      <div class="item">
+        <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/49742685_454715061729604_1208957483356258304_o.jpg?_nc_cat=111&_nc_sid=dd9801&_nc_ohc=jaPEnKZWURgAX8B-VBm&_nc_ht=scontent-sea1-1.xx&oh=230d78f7dd777e232d1861718ab361b5&oe=5FA092CB" alt="Los Angeles" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>Qodesh University of Washington</h3>
+  <p><em>We love Jesus!</em></p>
+  <p>we have a simple hope: to see people come to know Jesus Christ and grow in their Christian faith.We've been helping spread God's good news here in our hometown and throughout the world, and we pray that God will continue to use our congregation. Whether you've been attending church for years or haven't stepped into a sanctuary in decades, we hope you'll come and join us Sunday if you're looking for a church in our hometown.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Main Body</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/119968509_864090657458707_1971972177719823916_n.jpg?_nc_cat=101&_nc_sid=0be424&_nc_ohc=_oadfiStVnUAX-xahoa&_nc_ht=scontent-sea1-1.xx&oh=75968e222167ab32eeca14f9bc7e93b2&oe=5F9E8BF4" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p>Building block</p>
+        <p>Love working for the Lord all day long</p>
+        <p>Member since 2011</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Dancing Stars</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/71403359_610016109532831_3290601421602291712_o.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_ohc=_kcXPm3Kls8AX_g8Pzr&_nc_ht=scontent-sea1-1.xx&oh=2ca104532d201555b1a2944511bc4023&oe=5F9D3180" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>Dancing</p>
+        <p>Loves dancing</p>
+        <p>Member since 2018</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Greater Love Gospel choir</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/72171592_610015402866235_8804785838446608384_o.jpg?_nc_cat=103&_nc_sid=e007fa&_nc_ohc=1AA0j9dbmDIAX8qYDLo&_nc_ht=scontent-sea1-1.xx&oh=7630f4a24a9c7043525c337b69d97438&oe=5F9E6048" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>Choir</p>
+        <p>Loves Singing</p>
+        <p>started since 2018</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">Church Services And Location</h3>
+    <p class="text-center">Visit the Church at  1710 Market Street Tacoma, WA<br></p>
+    <ul class="list-group">
+      <li class="list-group-item">Sunday Service <span class="label label-danger">10:30am - 12:40pm!</span></li>
+      <li class="list-group-item">Wednesday Service <span class="label label-danger">6:30pm - 8:30pm!</span></li> 
+      <li class="list-group-item"><span class="badge"></span></li> 
+    </ul>
+    
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-0/c3.0.206.206a/p206x206/107664372_810578642809909_2463728695385440205_n.jpg?_nc_cat=111&_nc_sid=8bfeb9&_nc_ohc=gB7uZLwyq7kAX8LLZDu&_nc_ht=scontent-sea1-1.xx&_nc_tp=27&oh=7a09316b7a0be6e1261a776ff9e38380&oe=5FA0BB18" alt="Bishop" width="400" height="300">
+          <p><strong>Monday Flow Service with Dag Heward-Mills</strong></p>
+          <p>8:30PM-2AM</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Invitation</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/106213846_808745079659932_1573224685016070397_n.jpg?_nc_cat=104&_nc_sid=110474&_nc_ohc=KBj_lU65iLYAX-um9F-&_nc_ht=scontent-sea1-1.xx&oh=14d4031a3fe7c9017ac3d782b4545ac7&oe=5FA0129F" alt="New York" width="400" height="300">
+          <p><strong>Thursday Flow Service with Dag Heward-Mills</strong></p>
+          <p>8:30PM-2AM</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Invitation</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/84501495_708754376325670_6742054423616290816_o.jpg?_nc_cat=104&_nc_sid=e007fa&_nc_ohc=wSXD4e4hfLUAX92oc3M&_nc_ht=scontent-sea1-1.xx&oh=2d33f95c43a4e501c79dd8bab169bf5d&oe=5FA06FA6" alt="San Francisco" width="400" height="300">
+          <p><strong>Saturday Rehearsal</strong></p>
+          <p>5PM-6PM</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Invitation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span>INVITATION</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> INVITATION</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Send 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We love our Christain!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Gvae your life to Christ or New to our Church? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>1710 Market Street Tacoma, WA, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: (253) 292-1281</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: @QodeshUWSeattle</Q></p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 class="text-center">From The Blog</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Rev.</a></li>
+    <li><a data-toggle="tab" href="#menu1">Dancing stars</a></li>
+    <li><a data-toggle="tab" href="#menu2">Choir</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Rev. Nii Nortey Quist Therson, Pastor</h2>
+      <p> We started in January 2018. Looking forward to providing a solid foundation of Bible based instruction equipping our members to preach the Gospel.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>Dancing Stars </h2>
+      <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2>Choir, Bass player</h2>
+      <p>I mean, I enjoy the choir all the time.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="map.jpg" class="img-responsive" style="width:100%">
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
